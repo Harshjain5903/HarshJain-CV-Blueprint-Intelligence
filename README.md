@@ -1,17 +1,17 @@
 # BluePrint-To-Vector-AI | Harsh Jain
 
-### 🏗️ Advanced Computer Vision for Automated Construction Takeoffs
+### Advanced Computer Vision for Automated Construction Takeoffs
 **Author:** Harsh Jain (Master’s Student in Computer Science @ UIC)
 **Project Focus:** Semantic Segmentation, Object Detection, and Raster-to-Vector Conversion
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 In the construction industry, "takeoffs"—the manual process of measuring and counting materials from blueprints—is a massive bottleneck. This project implements a **State-of-the-Art (SOTA)** research pipeline designed to automate this process. By utilizing deep learning architectures, the system identifies structural elements and converts flat raster images into high-fidelity mathematical vector data, aiming to accelerate cost estimation by up to 10x.
 
 ---
 
-## ✨ Key Research & Technical Features
+## Key Research & Technical Features
 * **Instance & Semantic Segmentation**: Leverages a multi-stage pipeline to precisely identify individual structural elements like walls, windows, and doors.
 * **Structural Intelligence**: Classifies elements into 8 specific architectural categories, distinguishing between Inner and Outer walls for accurate material estimation.
 * **Topology Correction (GAN-based)**: Employs a Generative Adversarial Network (GAN) to correct missing or extra architectural symbols, ensuring high-integrity outputs.
@@ -19,14 +19,14 @@ In the construction industry, "takeoffs"—the manual process of measuring and c
 
 ---
 
-## 🧠 Research Extensions & Active Development (by Harsh Jain)
+## Research Extensions & Active Development (by Harsh Jain)
 1.  **Swin Transformer Integration**: Investigating the use of **Swin Transformer backbones** within a Cascade R-CNN framework to improve long-range spatial awareness in complex blueprints.
 2.  **Optimized PDF Pipeline**: Developing a robust preprocessing module to handle high-resolution PDF vector reading with minimal data loss during rasterization.
 3.  **OCR & Legend Mapping**: Exploring the integration of LayoutLM-based OCR to automatically map blueprint legends to identified structural icons.
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 * **Programming**: Python 3.7+ (Optimized for modular research execution)
 * **Deep Learning Frameworks**: PyTorch 1.8.1, TorchVision
 * **Computer Vision Libraries**: OpenCV, Scikit-image, Shapely
@@ -34,13 +34,13 @@ In the construction industry, "takeoffs"—the manual process of measuring and c
 
 ---
 
-## 📊 Class Mapping & Domain Logic
+## Class Mapping & Domain Logic
 The model recognizes and categorizes the following structural classes:
 `0: Background` | `1: Outer wall` | `2: Inner wall` | `3: Window` | `4: Door` | `5: Open portal` | `6: Room` | `7: Frame`
 
 ---
 
-## ⚙️ Environment Preparation
+## Environment Preparation
 This project is configured for Python environment management using Conda:
 
 ```bash
@@ -57,7 +57,7 @@ pip install ruamel.yaml tqdm opencv_python
 
 ---
 
-## 🚀 Running the Pipeline
+## Running the Pipeline
 
 ### 1. Instance Segmentation
 
